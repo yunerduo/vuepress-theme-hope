@@ -1,0 +1,683 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AutoCatalog > should render catalog with base 1`] = `
+"<div class=\\"auto-catalog-wrapper\\">
+  <h2 class=\\"main-title\\">Catalog</h2>
+  <h3 id=\\"Title A-A\\" class=\\"child-title\\"><a href=\\"#Title A-A\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a/a.html\\">
+      <!---->
+      <!---->Title A-A
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title A-A-README\\" class=\\"child-title has-children\\"><a href=\\"#Title A-A-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a/a/\\">
+      <!---->
+      <!---->Title A-A-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-A-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/a/a.html\\">
+          <!---->
+          <!---->Title A-A-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-A-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/a/b.html\\">
+          <!---->
+          <!---->Title A-A-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-A-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/a/c.html\\">
+          <!---->
+          <!---->Title A-A-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+  </ul>
+  <h3 id=\\"Title A-B\\" class=\\"child-title\\"><a href=\\"#Title A-B\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a/b.html\\">
+      <!---->
+      <!---->Title A-B
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title A-B-README\\" class=\\"child-title has-children\\"><a href=\\"#Title A-B-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a/b/\\">
+      <!---->
+      <!---->Title A-B-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-B-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/b/a.html\\">
+          <!---->
+          <!---->Title A-B-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-B-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/b/b.html\\">
+          <!---->
+          <!---->Title A-B-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-B-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/b/c.html\\">
+          <!---->
+          <!---->Title A-B-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+  </ul>
+  <h3 id=\\"Title A-C\\" class=\\"child-title\\"><a href=\\"#Title A-C\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a/c.html\\">
+      <!---->
+      <!---->Title A-C
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title A-C-README\\" class=\\"child-title has-children\\"><a href=\\"#Title A-C-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a/c/\\">
+      <!---->
+      <!---->Title A-C-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-C-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/c/a.html\\">
+          <!---->
+          <!---->Title A-C-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-C-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/c/b.html\\">
+          <!---->
+          <!---->Title A-C-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-C-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/c/c.html\\">
+          <!---->
+          <!---->Title A-C-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+  </ul>
+</div>"
+`;
+
+exports[`AutoCatalog > should render catalog with level 1`] = `
+"<div class=\\"auto-catalog-wrapper\\">
+  <h2 class=\\"main-title\\">Catalog</h2>
+  <h3 id=\\"Title A\\" class=\\"child-title\\"><a href=\\"#Title A\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a.html\\">
+      <!---->
+      <!---->Title A
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title A-README\\" class=\\"child-title has-children\\"><a href=\\"#Title A-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a/\\">
+      <!---->
+      <!---->Title A-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/a.html\\">
+          <!---->
+          <!---->Title A-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-A-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/a/\\">
+          <!---->
+          <!---->Title A-A-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/b.html\\">
+          <!---->
+          <!---->Title A-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-B-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/b/\\">
+          <!---->
+          <!---->Title A-B-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/c.html\\">
+          <!---->
+          <!---->Title A-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-C-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/c/\\">
+          <!---->
+          <!---->Title A-C-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+  </ul>
+  <h3 id=\\"Title B\\" class=\\"child-title\\"><a href=\\"#Title B\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/b.html\\">
+      <!---->
+      <!---->Title B
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title B-README\\" class=\\"child-title has-children\\"><a href=\\"#Title B-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/b/\\">
+      <!---->
+      <!---->Title B-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/a.html\\">
+          <!---->
+          <!---->Title B-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-A-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/a/\\">
+          <!---->
+          <!---->Title B-A-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/b.html\\">
+          <!---->
+          <!---->Title B-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-B-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/b/\\">
+          <!---->
+          <!---->Title B-B-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/c.html\\">
+          <!---->
+          <!---->Title B-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-C-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/c/\\">
+          <!---->
+          <!---->Title B-C-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+  </ul>
+  <h3 id=\\"Title C\\" class=\\"child-title\\"><a href=\\"#Title C\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/c.html\\">
+      <!---->
+      <!---->Title C
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title C-README\\" class=\\"child-title has-children\\"><a href=\\"#Title C-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/c/\\">
+      <!---->
+      <!---->Title C-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/a.html\\">
+          <!---->
+          <!---->Title C-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-A-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/a/\\">
+          <!---->
+          <!---->Title C-A-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/b.html\\">
+          <!---->
+          <!---->Title C-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-B-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/b/\\">
+          <!---->
+          <!---->Title C-B-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/c.html\\">
+          <!---->
+          <!---->Title C-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-C-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/c/\\">
+          <!---->
+          <!---->Title C-C-README
+        </router-link>
+      </div>
+      <!---->
+    </li>
+  </ul>
+</div>"
+`;
+
+exports[`AutoCatalog > should render empty hint 1`] = `
+"<div class=\\"auto-catalog-wrapper\\">
+  <h2 class=\\"main-title\\">Catalog</h2>
+  <p class=\\"empty-catalog\\">No catalog</p>
+</div>"
+`;
+
+exports[`AutoCatalog > should render whole catalog 1`] = `
+"<div class=\\"auto-catalog-wrapper\\">
+  <h2 class=\\"main-title\\">Catalog</h2>
+  <h3 id=\\"Title A\\" class=\\"child-title\\"><a href=\\"#Title A\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a.html\\">
+      <!---->
+      <!---->Title A
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title A-README\\" class=\\"child-title has-children\\"><a href=\\"#Title A-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/a/\\">
+      <!---->
+      <!---->Title A-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/a.html\\">
+          <!---->
+          <!---->Title A-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title A-A-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/a/\\">
+          <!---->
+          <!---->Title A-A-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/a/a.html\\">
+          <!---->
+          <!---->Title A-A-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/a/b.html\\">
+          <!---->
+          <!---->Title A-A-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/a/c.html\\">
+          <!---->
+          <!---->Title A-A-C
+        </router-link>
+      </div>
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/b.html\\">
+          <!---->
+          <!---->Title A-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title A-B-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/b/\\">
+          <!---->
+          <!---->Title A-B-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/b/a.html\\">
+          <!---->
+          <!---->Title A-B-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/b/b.html\\">
+          <!---->
+          <!---->Title A-B-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/b/c.html\\">
+          <!---->
+          <!---->Title A-B-C
+        </router-link>
+      </div>
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title A-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/c.html\\">
+          <!---->
+          <!---->Title A-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title A-C-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/a/c/\\">
+          <!---->
+          <!---->Title A-C-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/c/a.html\\">
+          <!---->
+          <!---->Title A-C-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/c/b.html\\">
+          <!---->
+          <!---->Title A-C-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/a/c/c.html\\">
+          <!---->
+          <!---->Title A-C-C
+        </router-link>
+      </div>
+    </li>
+  </ul>
+  <h3 id=\\"Title B\\" class=\\"child-title\\"><a href=\\"#Title B\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/b.html\\">
+      <!---->
+      <!---->Title B
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title B-README\\" class=\\"child-title has-children\\"><a href=\\"#Title B-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/b/\\">
+      <!---->
+      <!---->Title B-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/a.html\\">
+          <!---->
+          <!---->Title B-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title B-A-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/a/\\">
+          <!---->
+          <!---->Title B-A-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/a/a.html\\">
+          <!---->
+          <!---->Title B-A-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/a/b.html\\">
+          <!---->
+          <!---->Title B-A-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/a/c.html\\">
+          <!---->
+          <!---->Title B-A-C
+        </router-link>
+      </div>
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/b.html\\">
+          <!---->
+          <!---->Title B-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title B-B-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/b/\\">
+          <!---->
+          <!---->Title B-B-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/b/a.html\\">
+          <!---->
+          <!---->Title B-B-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/b/b.html\\">
+          <!---->
+          <!---->Title B-B-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/b/c.html\\">
+          <!---->
+          <!---->Title B-B-C
+        </router-link>
+      </div>
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title B-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/c.html\\">
+          <!---->
+          <!---->Title B-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title B-C-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/b/c/\\">
+          <!---->
+          <!---->Title B-C-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/c/a.html\\">
+          <!---->
+          <!---->Title B-C-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/c/b.html\\">
+          <!---->
+          <!---->Title B-C-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/b/c/c.html\\">
+          <!---->
+          <!---->Title B-C-C
+        </router-link>
+      </div>
+    </li>
+  </ul>
+  <h3 id=\\"Title C\\" class=\\"child-title\\"><a href=\\"#Title C\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/c.html\\">
+      <!---->
+      <!---->Title C
+    </router-link>
+  </h3>
+  <!---->
+  <h3 id=\\"Title C-README\\" class=\\"child-title has-children\\"><a href=\\"#Title C-README\\" class=\\"header-anchor\\">#</a>
+    <router-link class=\\"catalog-title\\" to=\\"/c/\\">
+      <!---->
+      <!---->Title C-README
+    </router-link>
+  </h3>
+  <ul class=\\"child-catalog-wrapper\\">
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-A\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/a.html\\">
+          <!---->
+          <!---->Title C-A
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title C-A-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/a/\\">
+          <!---->
+          <!---->Title C-A-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/a/a.html\\">
+          <!---->
+          <!---->Title C-A-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/a/b.html\\">
+          <!---->
+          <!---->Title C-A-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/a/c.html\\">
+          <!---->
+          <!---->Title C-A-C
+        </router-link>
+      </div>
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-B\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/b.html\\">
+          <!---->
+          <!---->Title C-B
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title C-B-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/b/\\">
+          <!---->
+          <!---->Title C-B-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/b/a.html\\">
+          <!---->
+          <!---->Title C-B-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/b/b.html\\">
+          <!---->
+          <!---->Title C-B-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/b/c.html\\">
+          <!---->
+          <!---->Title C-B-C
+        </router-link>
+      </div>
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title\\"><a href=\\"#Title C-C\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/c.html\\">
+          <!---->
+          <!---->Title C-C
+        </router-link>
+      </div>
+      <!---->
+    </li>
+    <li class=\\"child-catalog-item\\">
+      <div class=\\"sub-title has-children\\"><a href=\\"#Title C-C-README\\" class=\\"header-anchor\\">#</a>
+        <router-link class=\\"catalog-title\\" to=\\"/c/c/\\">
+          <!---->
+          <!---->Title C-C-README
+        </router-link>
+      </div>
+      <div class=\\"sub-catalog-wrapper\\">
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/c/a.html\\">
+          <!---->
+          <!---->Title C-C-A
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/c/b.html\\">
+          <!---->
+          <!---->Title C-C-B
+        </router-link>
+        <router-link class=\\"sub-catalog-item\\" to=\\"/c/c/c.html\\">
+          <!---->
+          <!---->Title C-C-C
+        </router-link>
+      </div>
+    </li>
+  </ul>
+</div>"
+`;

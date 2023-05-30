@@ -1,0 +1,196 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Artalk > should render  comment system 1`] = `
+"<div class=\\"artalk-wrapper\\">
+  <div class=\\"artalk\\">
+    <div class=\\"atk-main-editor\\">
+      <div class=\\"atk-header\\">
+        <input name=\\"nick\\" class=\\"atk-nick\\" type=\\"text\\" required=\\"required\\" placeholder=\\"昵称\\">
+        <input name=\\"email\\" class=\\"atk-email\\" type=\\"email\\" required=\\"required\\" placeholder=\\"邮箱\\">
+        <input name=\\"link\\" class=\\"atk-link\\" type=\\"url\\" placeholder=\\"网址\\">
+      </div>
+      <div class=\\"atk-textarea-wrap\\">
+        <textarea class=\\"atk-textarea\\" placeholder=\\"键入内容...\\"></textarea>
+      </div>
+      <div class=\\"atk-plug-panel-wrap\\" style=\\"display: none;\\">
+        <div class=\\"atk-editor-plug-emoticons\\" data-plug-name=\\"emoticons\\" style=\\"display: none;\\"></div>
+        <div class=\\"atk-editor-plug-preview\\" data-plug-name=\\"preview\\" style=\\"display: none;\\"></div>
+      </div>
+      <div class=\\"atk-bottom\\">
+        <div class=\\"atk-item atk-plug-btn-wrap\\"><span class=\\"atk-plug-btn\\" data-plug-name=\\"hn\\">表情</span><span class=\\"atk-plug-btn\\" data-plug-name=\\"un\\">图片</span><span class=\\"atk-plug-btn\\" data-plug-name=\\"pn\\">预览 <i title=\\"Markdown is supported\\"><svg class=\\"markdown\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" width=\\"16\\" height=\\"16\\" aria-hidden=\\"true\\"><path fill-rule=\\"evenodd\\" d=\\"M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z\\"></path></svg></i></span></div>
+        <div class=\\"atk-item\\">
+          <button type=\\"button\\" class=\\"atk-send-btn\\">发送评论</button>
+        </div>
+      </div>
+      <div class=\\"atk-notify-wrap\\"></div>
+    </div>
+    <div class=\\"atk-list\\">
+      <div class=\\"atk-list-header\\">
+        <div class=\\"atk-comment-count atk-dropdown-wrap\\"><span class=\\"atk-comment-count-num\\">0</span> 条评论<span class=\\"atk-arrow-down-icon\\"></span>
+          <ul class=\\"atk-dropdown atk-fade-in\\">
+            <li class=\\"atk-dropdown-item active\\"><span>最新</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>最热</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>最早</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>作者</span></li>
+          </ul>
+        </div>
+        <div class=\\"atk-right-action\\">
+          <span data-action=\\"admin-close-comment\\" class=\\"atk-hide\\" atk-only-admin-show=\\"\\">关闭评论</span>
+          <span data-action=\\"open-sidebar\\" class=\\"atk-hide atk-on\\">
+        <span class=\\"atk-unread-badge\\" style=\\"display: none;\\"></span>
+          <div class=\\"atk-text\\">通知中心</div>
+          </span>
+        </div>
+      </div>
+      <div class=\\"atk-list-body\\">
+        <div class=\\"atk-list-lite\\">
+          <div class=\\"atk-list-comments-wrap\\">
+            <div class=\\"atk-list-no-comment\\">「此时无声胜有声」</div>
+          </div>
+        </div>
+      </div>
+      <div class=\\"atk-list-footer\\">
+        <div class=\\"atk-copyright\\">Powered By <a href=\\"https://artalk.js.org\\" target=\\"_blank\\" title=\\"Artalk v2.5.5\\">Artalk</a></div>
+      </div>
+      <div class=\\"atk-loading atk-fade-in\\" style=\\"display: none;\\">
+        <div class=\\"atk-loading-spinner\\" style=\\"display: none;\\">
+          <svg viewBox=\\"25 25 50 50\\">
+            <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\" stroke-width=\\"2\\" stroke-miterlimit=\\"10\\"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class=\\"atk-error-layer\\"><span class=\\"atk-error-title\\">Artalk Error</span><span class=\\"atk-error-text\\"><span>无效的请求, 无法获取 \`origin\`，无法获取评论列表数据<br><span style=\\"cursor:pointer;\\">点击重新获取</span><span atk-only-admin-show=\\"\\" class=\\"atk-hide\\"> | <span style=\\"cursor:pointer;\\">打开控制台</span></span></span></span></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Artalk > should render Artalk comment system 1`] = `
+"<div class=\\"artalk-wrapper\\">
+  <div class=\\"artalk\\">
+    <div class=\\"atk-main-editor\\">
+      <div class=\\"atk-header\\">
+        <input name=\\"nick\\" class=\\"atk-nick\\" type=\\"text\\" required=\\"required\\" placeholder=\\"昵称\\">
+        <input name=\\"email\\" class=\\"atk-email\\" type=\\"email\\" required=\\"required\\" placeholder=\\"邮箱\\">
+        <input name=\\"link\\" class=\\"atk-link\\" type=\\"url\\" placeholder=\\"网址\\">
+      </div>
+      <div class=\\"atk-textarea-wrap\\">
+        <textarea class=\\"atk-textarea\\" placeholder=\\"键入内容...\\"></textarea>
+      </div>
+      <div class=\\"atk-plug-panel-wrap\\" style=\\"display: none;\\">
+        <div class=\\"atk-editor-plug-emoticons\\" data-plug-name=\\"emoticons\\" style=\\"display: none;\\"></div>
+        <div class=\\"atk-editor-plug-preview\\" data-plug-name=\\"preview\\" style=\\"display: none;\\"></div>
+      </div>
+      <div class=\\"atk-bottom\\">
+        <div class=\\"atk-item atk-plug-btn-wrap\\"><span class=\\"atk-plug-btn\\" data-plug-name=\\"hn\\">表情</span><span class=\\"atk-plug-btn\\" data-plug-name=\\"un\\">图片</span><span class=\\"atk-plug-btn\\" data-plug-name=\\"pn\\">预览 <i title=\\"Markdown is supported\\"><svg class=\\"markdown\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" width=\\"16\\" height=\\"16\\" aria-hidden=\\"true\\"><path fill-rule=\\"evenodd\\" d=\\"M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z\\"></path></svg></i></span></div>
+        <div class=\\"atk-item\\">
+          <button type=\\"button\\" class=\\"atk-send-btn\\">发送评论</button>
+        </div>
+      </div>
+      <div class=\\"atk-notify-wrap\\"></div>
+    </div>
+    <div class=\\"atk-list\\">
+      <div class=\\"atk-list-header\\">
+        <div class=\\"atk-comment-count atk-dropdown-wrap\\"><span class=\\"atk-comment-count-num\\">0</span> 条评论<span class=\\"atk-arrow-down-icon\\"></span>
+          <ul class=\\"atk-dropdown atk-fade-in\\">
+            <li class=\\"atk-dropdown-item active\\"><span>最新</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>最热</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>最早</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>作者</span></li>
+          </ul>
+        </div>
+        <div class=\\"atk-right-action\\">
+          <span data-action=\\"admin-close-comment\\" class=\\"atk-hide\\" atk-only-admin-show=\\"\\">关闭评论</span>
+          <span data-action=\\"open-sidebar\\" class=\\"atk-hide atk-on\\">
+        <span class=\\"atk-unread-badge\\" style=\\"display: none;\\"></span>
+          <div class=\\"atk-text\\">通知中心</div>
+          </span>
+        </div>
+      </div>
+      <div class=\\"atk-list-body\\">
+        <div class=\\"atk-list-lite\\">
+          <div class=\\"atk-list-comments-wrap\\">
+            <div class=\\"atk-list-no-comment\\">「此时无声胜有声」</div>
+          </div>
+        </div>
+      </div>
+      <div class=\\"atk-list-footer\\">
+        <div class=\\"atk-copyright\\">Powered By <a href=\\"https://artalk.js.org\\" target=\\"_blank\\" title=\\"Artalk v2.5.5\\">Artalk</a></div>
+      </div>
+      <div class=\\"atk-loading atk-fade-in\\" style=\\"display: none;\\">
+        <div class=\\"atk-loading-spinner\\" style=\\"display: none;\\">
+          <svg viewBox=\\"25 25 50 50\\">
+            <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\" stroke-width=\\"2\\" stroke-miterlimit=\\"10\\"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class=\\"atk-error-layer\\"><span class=\\"atk-error-title\\">Artalk Error</span><span class=\\"atk-error-text\\"><span>无效的请求, 无法获取 \`origin\`，无法获取评论列表数据<br><span style=\\"cursor:pointer;\\">点击重新获取</span><span atk-only-admin-show=\\"\\" class=\\"atk-hide\\"> | <span style=\\"cursor:pointer;\\">打开控制台</span></span></span></span></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`Artalk > should render Artalk comment systerm 1`] = `
+"<div class=\\"artalk-wrapper\\">
+  <div class=\\"artalk\\">
+    <div class=\\"atk-main-editor\\">
+      <div class=\\"atk-header\\">
+        <input name=\\"nick\\" class=\\"atk-nick\\" type=\\"text\\" required=\\"required\\" placeholder=\\"昵称\\">
+        <input name=\\"email\\" class=\\"atk-email\\" type=\\"email\\" required=\\"required\\" placeholder=\\"邮箱\\">
+        <input name=\\"link\\" class=\\"atk-link\\" type=\\"url\\" placeholder=\\"网址\\">
+      </div>
+      <div class=\\"atk-textarea-wrap\\">
+        <textarea class=\\"atk-textarea\\" placeholder=\\"键入内容...\\"></textarea>
+      </div>
+      <div class=\\"atk-plug-panel-wrap\\" style=\\"display: none;\\">
+        <div class=\\"atk-editor-plug-emoticons\\" data-plug-name=\\"emoticons\\" style=\\"display: none;\\"></div>
+        <div class=\\"atk-editor-plug-preview\\" data-plug-name=\\"preview\\" style=\\"display: none;\\"></div>
+      </div>
+      <div class=\\"atk-bottom\\">
+        <div class=\\"atk-item atk-plug-btn-wrap\\"><span class=\\"atk-plug-btn\\" data-plug-name=\\"hn\\">表情</span><span class=\\"atk-plug-btn\\" data-plug-name=\\"un\\">图片</span><span class=\\"atk-plug-btn\\" data-plug-name=\\"pn\\">预览 <i title=\\"Markdown is supported\\"><svg class=\\"markdown\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" width=\\"16\\" height=\\"16\\" aria-hidden=\\"true\\"><path fill-rule=\\"evenodd\\" d=\\"M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z\\"></path></svg></i></span></div>
+        <div class=\\"atk-item\\">
+          <button type=\\"button\\" class=\\"atk-send-btn\\">发送评论</button>
+        </div>
+      </div>
+      <div class=\\"atk-notify-wrap\\"></div>
+    </div>
+    <div class=\\"atk-list\\">
+      <div class=\\"atk-list-header\\">
+        <div class=\\"atk-comment-count atk-dropdown-wrap\\"><span class=\\"atk-comment-count-num\\">0</span> 条评论<span class=\\"atk-arrow-down-icon\\"></span>
+          <ul class=\\"atk-dropdown atk-fade-in\\">
+            <li class=\\"atk-dropdown-item active\\"><span>最新</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>最热</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>最早</span></li>
+            <li class=\\"atk-dropdown-item\\"><span>作者</span></li>
+          </ul>
+        </div>
+        <div class=\\"atk-right-action\\">
+          <span data-action=\\"admin-close-comment\\" class=\\"atk-hide\\" atk-only-admin-show=\\"\\">关闭评论</span>
+          <span data-action=\\"open-sidebar\\" class=\\"atk-hide atk-on\\">
+        <span class=\\"atk-unread-badge\\" style=\\"display: none;\\"></span>
+          <div class=\\"atk-text\\">通知中心</div>
+          </span>
+        </div>
+      </div>
+      <div class=\\"atk-list-body\\">
+        <div class=\\"atk-list-lite\\">
+          <div class=\\"atk-list-comments-wrap\\">
+            <div class=\\"atk-list-no-comment\\">「此时无声胜有声」</div>
+          </div>
+        </div>
+      </div>
+      <div class=\\"atk-list-footer\\">
+        <div class=\\"atk-copyright\\">Powered By <a href=\\"https://artalk.js.org\\" target=\\"_blank\\" title=\\"Artalk v2.5.5\\">Artalk</a></div>
+      </div>
+      <div class=\\"atk-loading atk-fade-in\\" style=\\"display: none;\\">
+        <div class=\\"atk-loading-spinner\\" style=\\"display: none;\\">
+          <svg viewBox=\\"25 25 50 50\\">
+            <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\" stroke-width=\\"2\\" stroke-miterlimit=\\"10\\"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class=\\"atk-error-layer\\"><span class=\\"atk-error-title\\">Artalk Error</span><span class=\\"atk-error-text\\"><span>无效的请求, 无法获取 \`origin\`，无法获取评论列表数据<br><span style=\\"cursor:pointer;\\">点击重新获取</span><span atk-only-admin-show=\\"\\" class=\\"atk-hide\\"> | <span style=\\"cursor:pointer;\\">打开控制台</span></span></span></span></div>
+    </div>
+  </div>
+</div>"
+`;

@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Giscus > should render comment system 1`] = `
+"<div class=\\"giscus-wrapper input-top\\" id=\\"comment\\">
+  <giscus-widget></giscus-widget>
+</div>"
+`;
