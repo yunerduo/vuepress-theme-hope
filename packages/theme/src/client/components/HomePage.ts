@@ -4,15 +4,12 @@ import { type SlotsType, type VNode, computed, defineComponent, h } from "vue";
 
 import FeaturePanel from "@theme-hope/components/FeaturePanel";
 import HeroInfo from "@theme-hope/components/HeroInfo";
+import HighlightPanel from "@theme-hope/components/HighlightPanel";
 import MarkdownContent from "@theme-hope/components/MarkdownContent";
 import DropTransition from "@theme-hope/components/transitions/DropTransition";
 import { usePure } from "@theme-hope/composables/index";
 
-import {
-  type ThemeProjectHomeFeatureItemOptions,
-  type ThemeProjectHomeFeatureOptions,
-  type ThemeProjectHomePageFrontmatter,
-} from "../../shared/index.js";
+import { type ThemeProjectHomePageFrontmatter } from "../../shared/index.js";
 
 import "../styles/home-page.scss";
 
@@ -32,12 +29,15 @@ export default defineComponent({
     const features = computed(() => {
       const { features } = frontmatter.value;
 
-      if (isArray(features))
-        return features.some((item) => !("items" in item))
-          ? [{ items: features as ThemeProjectHomeFeatureItemOptions[] }]
-          : (features as ThemeProjectHomeFeatureOptions[]);
+      return isArray(features) ? features : null;
+    });
 
-      return [];
+    const highlights = computed(() => {
+      const { highlights } = frontmatter.value;
+
+      if (isArray(highlights)) return highlights;
+
+      return null;
     });
 
     return (): VNode =>
@@ -52,17 +52,23 @@ export default defineComponent({
         [
           slots.top?.(),
           h(HeroInfo),
-          features.value.map(({ header = "", items }, index) =>
-            h(
-              DropTransition,
-              { appear: true, delay: 0.16 + index * 0.08 },
-              () => h(FeaturePanel, { header, items })
-            )
-          ),
+          highlights.value?.map((highlight) =>
+            "features" in highlight
+              ? h(FeaturePanel, highlight)
+              : h(HighlightPanel, highlight)
+          ) ||
+            (features.value
+              ? h(DropTransition, { appear: true, delay: 0.24 }, () =>
+                  h(FeaturePanel, { features: features.value! })
+                )
+              : null),
           slots.center?.(),
           h(
             DropTransition,
-            { appear: true, delay: 0.16 + features.value.length * 0.08 },
+            {
+              appear: true,
+              delay: 0.32,
+            },
             () => h(MarkdownContent)
           ),
           slots.bottom?.(),

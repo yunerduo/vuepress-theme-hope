@@ -3,6 +3,8 @@
 @use "vuepress-shared/styles/shining";
 
 .vp-hero-info-wrapper {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +19,9 @@
 }
 
 .vp-hero-info {
+  z-index: 1;
+  width: 100%;
+
   // NOTE: Compatible with Android Wechat
   // padding-inline: 2.5rem;
   padding-inline-start: 2.5rem;
@@ -36,7 +41,49 @@
   }
 }
 
+.vp-hero-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  background-position: 50%;
+  background-size: cover;
+
+  &::after {
+    content: " ";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    display: block;
+  }
+
+  &.light {
+    display: block;
+
+    #{hope-config.$dark-selector} & {
+      display: none;
+    }
+  }
+
+  &.dark {
+    display: none;
+
+    #{hope-config.$dark-selector} & {
+      display: block;
+    }
+  }
+}
+
 .vp-hero-infos {
+  z-index: 1;
   margin: 0 0.5rem;
 }
 
@@ -97,10 +144,15 @@
 
   @media (max-width: hope-config.$tablet) {
     margin: 0;
-    font-size: 2.5rem;
   }
 
   @media (max-width: hope-config.$pad) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  @media (max-width: hope-config.$tablet) {
+    font-size: 2.25rem;
     text-align: center;
   }
 
@@ -131,7 +183,7 @@
 .vp-description {
   max-width: 35rem;
 
-  color: var(--text-color-bright);
+  color: var(--text-color-light);
 
   font-weight: 500;
   font-size: 1.6rem;
