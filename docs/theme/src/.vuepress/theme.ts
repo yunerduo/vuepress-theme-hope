@@ -6,6 +6,7 @@ const __dirname = getDirname(import.meta.url);
 
 const IS_NETLIFY = "NETLIFY" in process.env;
 
+// the theme wrapper is located in <root>/docs-shared/src/theme-wrapper.ts
 export default theme("theme", {
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -14,6 +15,8 @@ export default theme("theme", {
   },
 
   fullscreen: true,
+
+  navTitle: false,
 
   extraLocales: {
     Русский: "https://theme-hope-ru.vuejs.press/:route",
@@ -96,7 +99,9 @@ export default theme("theme", {
           },
     },
 
-    copyright: true,
+    copyright: {
+      license: "MIT",
+    },
 
     feed: {
       atom: true,

@@ -23,11 +23,11 @@ export default defineComponent({
       repo.value
         ? h(
             "div",
-            { class: "nav-item" },
+            { class: "nav-item vp-repo" },
             h(
               "a",
               {
-                class: "repo-link",
+                class: "vp-repo-link",
                 href: repo.value.link,
                 target: "_blank",
                 rel: "noopener noreferrer",

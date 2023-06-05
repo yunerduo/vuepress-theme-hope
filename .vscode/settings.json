@@ -97,6 +97,7 @@
     "recaptcha",
     "replit",
     "shiki",
+    "slimsearch",
     "stackblitz",
     "striptags",
     "styl",
@@ -175,5 +176,6 @@
     "**/dist/**": true,
     "packages/*/lib/**": true
   },
+  "vitest.commandLine": "pnpm vitest",
   "typescript.tsdk": "node_modules/typescript/lib"
 }

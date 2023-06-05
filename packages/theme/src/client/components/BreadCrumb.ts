@@ -66,20 +66,20 @@ export default defineComponent({
         page.value.path,
         routeLocale.value
       )
-        .map<BreadCrumbConfig | null>((link) => {
+        .map<BreadCrumbConfig | null>(({ link, name }) => {
           const route = routes.find((route) => route.path === link);
 
           if (route) {
             const { meta, path } = resolveRouteWithRedirect(router, route.path);
-            const title =
-              meta[ArticleInfoType.shortTitle] || meta[ArticleInfoType.title];
 
-            if (title)
-              return {
-                title,
-                icon: meta[ArticleInfoType.icon],
-                path,
-              };
+            return {
+              title:
+                meta[ArticleInfoType.shortTitle] ||
+                meta[ArticleInfoType.title] ||
+                name,
+              icon: meta[ArticleInfoType.icon],
+              path,
+            };
           }
 
           return null;
@@ -98,7 +98,7 @@ export default defineComponent({
     return (): VNode =>
       h(
         "nav",
-        { class: ["breadcrumb", { disable: !enable.value }] },
+        { class: ["vp-breadcrumb", { disable: !enable.value }] },
         enable.value
           ? h(
               "ol",

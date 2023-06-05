@@ -1,4 +1,4 @@
-import { useScriptTag } from "@vueuse/core";
+import { type CodePenOptions, renderCodePen } from "create-codepen";
 import {
   type PropType,
   type VNode,
@@ -9,13 +9,6 @@ import {
 } from "vue";
 
 import "../styles/code-pen.scss";
-
-declare global {
-  interface Window {
-    // eslint-disable-next-line @typescript-eslint/naming-convention
-    __CPEmbed: (selector: string) => void;
-  }
-}
 
 export default defineComponent({
   name: "CodePen",
@@ -110,17 +103,22 @@ export default defineComponent({
 
     const slugHash = computed(() => getInfo().slugHash || props.slugHash);
 
-    useScriptTag("https://static.codepen.io/assets/embed/ei.js");
+    const options = computed(
+      () =>
+        <CodePenOptions>{
+          user: user.value,
+          "slug-hash": slugHash.value,
+          "theme-id": props.theme,
+          "default-tab": props.defaultTab.join(","),
+          "pen-title": props.title,
+          height: props.height,
+          preview: props.status === "preview" ? "true" : "",
+        }
+    );
 
     onMounted(() => {
-      if (props.status !== "clicktorun") {
-        const intervalID = setInterval(() => {
-          if (window.__CPEmbed) {
-            window.__CPEmbed(`.codepen-${slugHash.value}`);
-            clearInterval(intervalID);
-          }
-        }, 500);
-      }
+      if (props.status !== "clicktorun")
+        renderCodePen(options.value, `.codepen-${slugHash.value}`);
     });
 
     return (): VNode =>
@@ -128,14 +126,6 @@ export default defineComponent({
         "div",
         {
           class: ["codepen-wrapper", `codepen-${slugHash.value}`],
-          "data-height": props.height,
-          "data-theme-id": props.theme,
-          "data-user": user.value,
-          "data-slug-hash": slugHash.value,
-          "data-default-tab": props.defaultTab.join(","),
-          "data-pen-title": props.title,
-          "data-preview": props.status === "preview",
-          user: props.user,
         },
         [
           props.status === "clicktorun"
@@ -145,7 +135,7 @@ export default defineComponent({
                   type: "button",
                   class: "codepen-button",
                   onClick: () => {
-                    window.__CPEmbed(`.codepen-${slugHash.value}`);
+                    renderCodePen(options.value, `.codepen-${slugHash.value}`);
                   },
                 },
                 "Run Code"
