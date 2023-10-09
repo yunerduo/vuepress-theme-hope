@@ -102,18 +102,6 @@ export const prepareConfigFile = async (
     );
   }
 
-  if (getStatus("presentation")) {
-    imports.push(
-      `import "${getRealPath("reveal.js/dist/reveal.css", url)}";`,
-      `import Presentation from "${CLIENT_FOLDER}components/Presentation.js";`,
-      `import { injectRevealConfig } from "${CLIENT_FOLDER}index.js";`,
-    );
-    enhances.push(
-      `injectRevealConfig(app);`,
-      `app.component("Presentation", Presentation);`,
-    );
-  }
-
   if (getStatus("playground")) {
     imports.push(
       `import Playground from "${CLIENT_FOLDER}components/Playground.js";`,

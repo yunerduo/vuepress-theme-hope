@@ -3,17 +3,14 @@ import type { PropType, SlotsType, VNode } from "vue";
 import { defineComponent, h, toRef } from "vue";
 import { VPLink } from "vuepress-shared/client";
 
-import {
-  SlideIcon,
-  StickyIcon,
-} from "@theme-hope/modules/blog/components/icons/index";
+import { StickyIcon } from "@theme-hope/modules/blog/components/icons/index";
 import { useArticleInfo } from "@theme-hope/modules/blog/composables/index";
 import { LockIcon } from "@theme-hope/modules/encrypt/components/icons";
 import type { PageInfoProps } from "@theme-hope/modules/info/components/PageInfo";
 import PageInfo from "@theme-hope/modules/info/components/PageInfo";
 
 import type { ArticleInfo } from "../../../../shared/index.js";
-import { ArticleInfoType, PageType } from "../../../../shared/index.js";
+import { ArticleInfoType } from "../../../../shared/index.js";
 
 import "../styles/article-item.scss";
 
@@ -97,7 +94,6 @@ export default defineComponent({
                 slots.title?.({ title, isEncrypted, type }) ||
                 h("header", { class: "vp-article-title" }, [
                   isEncrypted ? h(LockIcon) : null,
-                  type === PageType.slide ? h(SlideIcon) : null,
                   h("span", { property: "headline" }, title),
                 ]),
             ),

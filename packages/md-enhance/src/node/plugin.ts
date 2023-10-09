@@ -29,7 +29,6 @@ import {
   detectPackageManager,
   getBundlerName,
   getLocales,
-  isArray,
   isPlainObject,
 } from "vuepress-shared/node";
 
@@ -56,7 +55,6 @@ import {
   mermaid,
   normalDemo,
   playground,
-  presentation,
   reactDemo,
   tabs,
   vPre,
@@ -64,11 +62,7 @@ import {
   vuePlayground,
 } from "./markdown-it/index.js";
 import type { MarkdownEnhanceOptions } from "./options.js";
-import {
-  prepareConfigFile,
-  prepareMathjaxStyleFile,
-  prepareRevealPluginFile,
-} from "./prepare/index.js";
+import { prepareConfigFile, prepareMathjaxStyleFile } from "./prepare/index.js";
 import type { KatexOptions } from "./typings/index.js";
 import { PLUGIN_NAME, logger } from "./utils.js";
 
@@ -109,7 +103,6 @@ export const mdEnhancePlugin =
     const includeEnable = getStatus("include");
     const tasklistEnable = getStatus("tasklist", true);
     const mermaidEnable = getStatus("mermaid");
-    const presentationEnable = getStatus("presentation");
     const katexEnable = getStatus("katex");
     const mathjaxEnable = getStatus("mathjax", true);
     const vuePlaygroundEnable = getStatus("vuePlayground");
@@ -159,10 +152,6 @@ export const mdEnhancePlugin =
             mathFence: options.gfm ?? false,
             ...(isPlainObject(options.mathjax) ? options.mathjax : {}),
           });
-
-    const revealPlugins = isArray(options.presentation)
-      ? options.presentation
-      : [];
 
     useSassPalettePlugin(app, { id: "hope" });
 
@@ -224,18 +213,6 @@ export const mdEnhancePlugin =
         if (mermaidEnable) {
           addViteOptimizeDepsInclude(bundlerOptions, app, "mermaid");
           addViteSsrExternal(bundlerOptions, app, "mermaid");
-        }
-
-        if (presentationEnable) {
-          addViteOptimizeDepsExclude(bundlerOptions, app, [
-            "reveal.js/dist/reveal.esm.js",
-            "reveal.js/plugin/markdown/markdown.esm.js",
-            ...revealPlugins.map(
-              (plugin) => `reveal.js/plugin/${plugin}/${plugin}.esm.js`,
-            ),
-          ]);
-
-          addViteSsrExternal(bundlerOptions, app, "reveal.js");
         }
 
         if (vuePlaygroundEnable) {
@@ -343,7 +320,6 @@ export const mdEnhancePlugin =
           if (legacy) md.use(legacyCodeDemo);
         }
         if (mermaidEnable) md.use(mermaid);
-        if (presentationEnable) md.use(presentation);
         if (isPlainObject(options.playground)) {
           const { presets = [], config = {} } = options.playground;
 
@@ -378,7 +354,6 @@ export const mdEnhancePlugin =
           mathjaxEnable
             ? prepareMathjaxStyleFile(app, mathjaxInstance!)
             : Promise.resolve(),
-          prepareRevealPluginFile(app, revealPlugins),
         ]).then(() => void 0),
 
       clientConfigFile: (app) => prepareConfigFile(app, options, legacy),

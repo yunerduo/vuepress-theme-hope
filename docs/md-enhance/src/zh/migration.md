@@ -214,3 +214,7 @@ icon: code-compare
 - `imageFix` 被移除
 
   Mr.Hope 已经做了一个 PR 来修复 Markdown 中损坏的图片链接
+
+- `presentation` 被移除
+
+  Reveal.js 运行时较大，为了瘦身当前包，我们将其提取成了一个独立包 [vuepress-plugin-revealjs](https://plugin-revealjs.vuejs.press).

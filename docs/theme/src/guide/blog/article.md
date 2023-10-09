@@ -8,7 +8,6 @@ tag:
   - Article
   - Blog
   - Encrypt
-  - Slide
   - Star
 ---
 

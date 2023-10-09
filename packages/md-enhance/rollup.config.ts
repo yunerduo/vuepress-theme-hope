@@ -23,15 +23,12 @@ export default [
         "components/FlowChart",
         "components/Mermaid",
         "components/Playground",
-        "components/Presentation",
         "components/Tabs",
         "components/VPCard",
         "components/VuePlayground",
         "composables/katex",
-        "SlidePage",
       ],
     },
-
     {
       external: [
         "@mermaid",

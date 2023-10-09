@@ -36,13 +36,10 @@ export const injectPageInfo = (page: Page<ThemePageData>): void => {
     frontmatter.article ||
     // generated from markdown files
     Boolean(frontmatter.article !== false && filePathRelative);
-  const isSlide = frontmatter.layout === "Slide";
 
   // save page type to routeMeta
   page.routeMeta[ArticleInfoType.type] = frontmatter.home
     ? PageType.home
-    : isSlide
-    ? PageType.slide
     : isArticle
     ? PageType.article
     : PageType.page;

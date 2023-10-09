@@ -96,11 +96,6 @@ highlights:
         details: Markdown 现在也可以支持 Tex 语法以显示公式
         link: ./guide/tex.html
 
-      - title: 幻灯片支持
-        icon: person-chalkboard
-        details: 你可以直接在 Markdown 中插入幻灯片
-        link: ./guide/presentation/
-
       - title: 选项卡
         icon: table-columns
         details: 使用选项卡对相似内容进行分组

@@ -142,11 +142,6 @@ highlights:
         details: You can insert code demo easily
         link: ./guide/markdown/demo/
 
-      - title: Presentation Support
-        icon: person-chalkboard
-        details: You can insert presentation in Markdown files directly
-        link: ./guide/markdown/presentation/
-
   - header: Improved layouts
     description: An awesome responsive layout with full a11y support.
     image: /assets/image/layout.svg
@@ -167,11 +162,6 @@ highlights:
         icon: palette
         details: Customize theme color
         link: ./guide/interface/theme-color.html
-
-      - title: Slide Page
-        icon: person-chalkboard
-        details: Adding slide pages to display things you like
-        link: ./guide/layout/slides
 
       - title: More
         icon: ellipsis

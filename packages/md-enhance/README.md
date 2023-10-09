@@ -36,6 +36,10 @@ yarn add -D vuepress-plugin-md-enhance
 
   Links has been fixed in V2
 
+- remove `presentation` option ![removed](https://img.shields.io/badge/-removed-red)
+
+  You should use `vuepress-plugin-revealjs`
+
 - new option `container` ![new](https://img.shields.io/badge/-new-brightgreen)
 
   Decides whether enable custom container that default theme provides
@@ -43,8 +47,6 @@ yarn add -D vuepress-plugin-md-enhance
 - option `delay` for the delay operating DOM when page loads or navigates ![new](https://img.shields.io/badge/-new-brightgreen)
 
 - option `locale` to support i18n config ![new](https://img.shields.io/badge/-new-brightgreen)
-
-- add SlidePage layout which can be used in themes ![new](https://img.shields.io/badge/-new-brightgreen)
 
 - Auto load needed CDN for code demo ![new](https://img.shields.io/badge/-new-brightgreen)
 
@@ -71,6 +73,10 @@ yarn add -D vuepress-plugin-md-enhance
 
   图片链接已经在 V2 中得到修正
 
+- 移除 `presentation` 选项 ![移除](https://img.shields.io/badge/-移除-red)
+
+  请使用 `vuepress-plugin-revealjs`
+
 - 选项 `container` ![新增](https://img.shields.io/badge/-新增-brightgreen)
 
   决定是否启用默认主题提供的自定义容器
@@ -78,7 +84,5 @@ yarn add -D vuepress-plugin-md-enhance
 - 选项 `delay`，控制页面加载和切换后进行 DOM 操作的延迟 ![新增](https://img.shields.io/badge/-新增-brightgreen)
 
 - 选项 `locale` 以支持国际化配置 ![新增](https://img.shields.io/badge/-新增-brightgreen)
-
-- 添加幻灯片布局，可在主题中引入使用 ![new](https://img.shields.io/badge/-new-brightgreen)
 
 - 自动导入代码演示的所需 CDN ![new](https://img.shields.io/badge/-new-brightgreen)

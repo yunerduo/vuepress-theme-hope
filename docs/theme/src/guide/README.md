@@ -41,7 +41,6 @@ Added more syntax to Markdown, enriching documentation and blog writing:
 - [Mermaid Diagram](markdown/mermaid.md)
 - [File include](markdown/include.md)
 - [Code demo](markdown/demo.md)
-- [Presentation](markdown/presentation.md)
 - [Stylize](markdown/stylize.md)
 - [Playground](markdown/playground.md)
 - [Vue Playground](markdown/vue-playground.md)

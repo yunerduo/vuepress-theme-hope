@@ -385,39 +385,4 @@ const msg = ref("Hello World!");
 
 - [View Detail](https://theme-hope.vuejs.press/guide/markdown/vue-playground.html)
 
-#### Presentation
-
-@slidestart
-
-## Slide 1
-
-A paragraph with some text and a [link](https://mister-hope.com)
-
----
-
-## Slide 2
-
-- Item 1
-- Item 2
-
----
-
-## Slide 3.1
-
-```js
-const a = 1;
-```
-
---
-
-## Slide 3.2
-
-$$
-J(\theta_0,\theta_1) = \sum_{i=0}
-$$
-
-@slideend
-
-- [View Detail](https://theme-hope.vuejs.press/guide/markdown/presentation.html)
-
 [md-enhance]: https://md-enhance.vuejs.press/

@@ -24,7 +24,6 @@ export const enum ArticleInfoType {
 export const enum PageType {
   article = "a",
   home = "h",
-  slide = "s",
   page = "p",
 }
 

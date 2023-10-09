@@ -606,32 +606,6 @@ Default value: `"https://unpkg.com/react/umd/react.production.min.js"`
 
 Default value: `"https://unpkg.com/react-dom/umd/react-dom.production.min.js"`
 
-### presentation
-
-- Type: `PresentationOptions | boolean`
-
-  ```ts
-  type RevealPlugin = "highlight" | "math" | "search" | "notes" | "zoom";
-  ```
-
-- Default: `false`
-
-Whether to enable presentation syntax support.
-
-You can set it with an array, which represents enabled plugins.
-
-Acceptable values are:
-
-- `"highlight"`
-- `"math"`
-- `"search"`
-- `"notes"`
-- `"zoom"`
-
-<!-- - `"anything"`
-- `"audio"`
-- `"chalkboard"` -->
-
 ### delay
 
 - Type: `number`

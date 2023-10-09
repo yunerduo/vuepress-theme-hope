@@ -7,7 +7,6 @@ export interface ThemeStatus {
   enableAutoCatalog: boolean;
   enableBlog: boolean;
   enableEncrypt: boolean;
-  enableSlide: boolean;
   enableReadingTime: boolean;
   blogType: { key: string; path: string }[];
   hasMultipleLanguages: boolean;
@@ -29,7 +28,6 @@ export const getStatus = (
       themeOptions.encrypt &&
         ("admin" in themeOptions.encrypt || "config" in themeOptions.encrypt),
     ),
-    enableSlide: Boolean(plugins.mdEnhance && plugins.mdEnhance.presentation),
     enableReadingTime: plugins.readingTime !== false,
     blogType: isPlainObject(plugins.blog)
       ? plugins.blog?.type?.map(({ key, path }) => ({

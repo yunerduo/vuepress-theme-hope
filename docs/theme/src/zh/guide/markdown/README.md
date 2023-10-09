@@ -52,8 +52,6 @@ dir:
 
 - [代码演示](demo.md)
 
-- [幻灯片](presentation.md)
-
 - [样式化](stylize.md)
 
 - [交互演示](playground.md)

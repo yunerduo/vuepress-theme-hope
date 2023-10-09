@@ -11,7 +11,7 @@ const { url } = import.meta;
  */
 export const prepareBundleConfigFile = (
   app: App,
-  { enableAutoCatalog, enableBlog, enableEncrypt, enableSlide }: ThemeStatus,
+  { enableAutoCatalog, enableBlog, enableEncrypt }: ThemeStatus,
 ): Promise<string> => {
   const imports: string[] = [];
   const enhances: string[] = [];
@@ -52,16 +52,6 @@ export const prepareBundleConfigFile = (
       `app.component("GlobalEncrypt", GlobalEncrypt);`,
       `app.component("LocalEncrypt", LocalEncrypt);`,
     );
-  }
-
-  if (enableSlide) {
-    imports.push(
-      `import Slide from "${getRealPath(
-        "vuepress-plugin-md-enhance/SlidePage",
-        url,
-      )}";`,
-    );
-    layouts.push("Slide,");
   }
 
   return app.writeTemp(

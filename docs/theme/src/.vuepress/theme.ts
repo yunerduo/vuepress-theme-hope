@@ -142,7 +142,6 @@ export default theme("theme", {
       playground: {
         presets: ["ts", "vue", "unocss"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",

@@ -25,7 +25,6 @@ The theme provides the following layouts:
 
 - Layout
 - NotFound
-- Slide (Only available when presentation is enabled)
 - BlogCategory (Only available when blog is enabled)
 - BlogHome (Only available when blog is enabled)
 - BlogType (Only available when blog is enabled)

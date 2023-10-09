@@ -40,8 +40,6 @@ export default defineUserConfig({
         "/demo/mark",
         "/demo/mermaid",
         "/demo/playground",
-        "/demo/presentation",
-        "/demo/slide-page",
         "/demo/stylized",
         "/demo/sup-sub",
         "/demo/tabs",
@@ -86,7 +84,6 @@ export default defineUserConfig({
       mathjax: {
         output: "chtml",
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",

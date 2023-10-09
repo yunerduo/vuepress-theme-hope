@@ -20,5 +20,3 @@ icon: splotch
 - [Custom Blog HomePage](./custom-blog-home.md)
 
 - [Encrypt Page](./encrypt.md) (Password: 1234)
-
-- <ProjectLink name="md-enhance" path="/guide/presentation/demo.html">Slide Page</ProjectLink>

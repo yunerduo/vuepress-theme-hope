@@ -16,6 +16,5 @@ export default sidebar({
       prefix: "guide/",
       children: "structure",
     },
-    "slides",
   ],
 });

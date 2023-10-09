@@ -680,32 +680,6 @@ CodePen 编辑器显示情况，第一位代表 HTML ，第二位代表 JS，第
 
 默认值: `"https://unpkg.com/react-dom/umd/react-dom.production.min.js"`
 
-### presentation
-
-- 类型: `RevealPlugin[] | boolean`
-
-  ```ts
-  type RevealPlugin = "highlight" | "math" | "search" | "notes" | "zoom";
-  ```
-
-- 默认值: `false`
-
-是否启用幻灯片支持。
-
-你可以传入一个数组，它将决定启用的 Reveal.js 插件
-
-可接受的插件有:
-
-- `"highlight"`
-- `"math"`
-- `"search"`
-- `"notes"`
-- `"zoom"`
-
-<!-- - `"anything"`
-- `"audio"`
-- `"chalkboard"` -->
-
 ### delay
 
 - 类型: `number`

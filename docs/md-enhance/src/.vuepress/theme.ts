@@ -51,7 +51,6 @@ export default theme("md-enhance", {
       playground: {
         presets: ["ts", "vue", "unocss"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",

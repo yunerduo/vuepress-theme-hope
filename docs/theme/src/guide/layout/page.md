@@ -99,7 +99,6 @@ The theme only provides `Layout`, `404` layout.
 Also the theme:
 
 - Provides a `Blog` layout when the blogging feature is enabled
-- Provides a `Slide` layout when the slideshow feature is enabled
 
 If you want to provide your own layout, please see [Theme Extending](../advanced/extend.md).
 

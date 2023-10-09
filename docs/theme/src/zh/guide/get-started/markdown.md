@@ -426,39 +426,6 @@ const msg = ref("Hello World!");
 
 - [查看详情](../markdown/vue-playground.md)
 
-#### 幻灯片
-
-@slidestart
-
-## 幻灯片 1
-
-一个有文字和 [链接](https://mister-hope.com) 的段落
-
----
-
-## 幻灯片 2
-
-- 项目 1
-- 项目 2
-
----
-
-## 幻灯片 3.1
-
-```js
-const a = 1;
-```
-
---
-
-## 幻灯片 3.2
-
-$$
-J(\theta_0,\theta_1) = \sum_{i=0}
-$$
-
-@slideend
-
-- [查看详情](../markdown/presentation.md)
+### 样式化
 
 - [查看详情](../markdown/stylize.md)

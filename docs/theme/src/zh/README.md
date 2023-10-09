@@ -142,11 +142,6 @@ highlights:
         details: 你可以很方便的插入代码案例
         link: ./guide/markdown/demo/
 
-      - title: 幻灯片支持
-        icon: person-chalkboard
-        details: 你可以直接在 Markdown 中插入幻灯片
-        link: ./guide/markdown/presentation/
-
   - header: 布局
     description: 一个带有完整无障碍支持的响应式布局。
     image: /assets/image/layout.svg
@@ -167,11 +162,6 @@ highlights:
         icon: palette
         details: 支持自定义主题色并允许用户在预设的主题颜色之间切换
         link: ./guide/interface/theme-color.html
-
-      - title: 幻灯片页面
-        icon: person-chalkboard
-        details: 添加幻灯片页面以显示你喜欢的内容
-        link: ./guide/layout/slides
 
       - title: 更多
         icon: ellipsis

@@ -29,10 +29,7 @@
     "tasklist",
     "tex",
     "katex",
-    "mathjax",
-    "slide",
-    "presentation",
-    "reveal.js"
+    "mathjax"
   ],
   "homepage": "https://plugin-md-enhance.vuejs.press/",
   "bugs": {
@@ -54,7 +51,6 @@
     ".": "./lib/node/index.js",
     "./client": "./lib/client/index.js",
     "./client/*": "./lib/client/*",
-    "./SlidePage": "./lib/client/SlidePage.js",
     "./package.json": "./package.json"
   },
   "files": [
@@ -109,7 +105,6 @@
     "katex": "^0.16.9",
     "markdown-it": "^13.0.2",
     "mermaid": "10.5.0",
-    "reveal.js": "^4.6.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
     "vuepress-plugin-sass-palette": "workspace:*",

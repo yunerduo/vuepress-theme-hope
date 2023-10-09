@@ -99,11 +99,6 @@ highlights:
         details: Markdown now have Tex Support so you can write your formula
         link: ./guide/tex.html
 
-      - title: Presentation Support
-        icon: person-chalkboard
-        details: You can insert presentation in Markdown files directly
-        link: ./guide/presentation/
-
       - title: Tabs
         icon: table-columns
         details: Group similar content with tabs and switch them together

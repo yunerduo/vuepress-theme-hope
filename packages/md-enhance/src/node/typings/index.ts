@@ -14,4 +14,3 @@ export type StylizeOptions = MarkdownItStylizeConfig[];
 export * from "./hint.js";
 export * from "./locales.js";
 export * from "./playground.js";
-export * from "./presentation.js";

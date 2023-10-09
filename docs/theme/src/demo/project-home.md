@@ -22,13 +22,8 @@ actions:
 features:
   - title: Markdown Enhance
     icon: fab fa-markdown
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
+    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram and mark support in Markdown
     link: /guide/markdown/
-
-  - title: Slide Page
-    icon: person-chalkboard
-    details: Adding slide pages to display things you like
-    link: /guide/layout/slides
 
   - title: Layout Enhancement
     icon: object-group

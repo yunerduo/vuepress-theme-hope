@@ -16,7 +16,7 @@ The original intention of building this theme was to find that VuePress default 
 
 For example, it will not inject meta tags for SEO optimization, nor will it generate a Sitemap to help search engines index the content of the document.
 
-Though VuePress has extended Markdown syntax to a certain extent, it still lacks some commonly used functions, such as text alignment, mark, flowchart, formula, presentation, etc. At the same time, some features provided by the default theme are weak or missing, such as picture preview, dark mode, etc.
+Though VuePress has extended Markdown syntax to a certain extent, it still lacks some commonly used functions, such as text alignment, mark, flowchart, formula, etc. At the same time, some features provided by the default theme are weak or missing, such as picture preview, dark mode, etc.
 
 In this case, the design of `vuepress-theme-hope` was born.
 
@@ -64,7 +64,7 @@ The theme provides a lot of extended syntax support for Markdown, allowing you t
 
 - If you are a programmer and need to show a lot of codes and demos, this theme provides light and dark themes for code blocks, [code tabs](../markdown/code-tabs.md) and the ["one-click copy" button](../feature/copy-code.md). At the same time, we also provide the [Code Demo](../markdown/demo.md), [Playground](../markdown/playground.md) and [Vue Playground](../markdown/vue-playground.md) functions, which is convenient for you to show your own Vue, React components or other demos and provide playground for visitors.
 
-- If you are providing product documentation and presentation, the theme provides [tabs](../markdown/tabs.md), [slide](../markdown/presentation.md), [chart](../markdown/chart.md), [flowchart](../markdown/flowchart.md), [mermaid diagram](../markdown/mermaid.md) functions.
+- If you are providing product documentation and presentation, the theme provides [tabs](../markdown/tabs.md), [chart](../markdown/chart.md), [flowchart](../markdown/flowchart.md), [mermaid diagram](../markdown/mermaid.md) functions.
 
 In short, anyone can enjoy the convenience of Markdown's enhanced syntax.
 

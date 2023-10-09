@@ -30,19 +30,16 @@ VuePress 是以 Markdown 为中心的。你项目中的每一个 Markdown 文件
    │  └─ markdown.md
    │  └─ README.md
    ├─ ...
-   ├─ slide.md
    └─ README.md
 ```
 
 你的 Markdown 文件对应的路由路径为:
 
-| 相对路径           | 路由路径            |
-| ------------------ | ------------------- |
-| `/README.md`       | `/`                 |
-| `/slide.md`        | `/slide.html`       |
-| `/guide/README.md` | `/guide/`           |
-| `/guide/slide.md`  | `/guide/slide.html` |
-| `/guide/page.md`   | `/guide/page.html`  |
+| 相对路径           | 路由路径           |
+| ------------------ | ------------------ |
+| `/README.md`       | `/`                |
+| `/guide/README.md` | `/guide/`          |
+| `/guide/page.md`   | `/guide/page.html` |
 
 ::: tip README.md
 

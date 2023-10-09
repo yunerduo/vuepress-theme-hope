@@ -522,6 +522,33 @@ importers:
         specifier: 2.0.0-beta.67
         version: 2.0.0-beta.67(esbuild@0.19.4)(sass@1.69.0)(typescript@5.2.2)(vue@3.3.4)(webpack@5.88.2)
 
+  demo/revealjs:
+    devDependencies:
+      '@vuepress/cli':
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67
+      '@vuepress/client':
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67
+      '@vuepress/theme-default':
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67(sass-loader@13.3.2)
+      sass-loader:
+        specifier: 13.3.2
+        version: 13.3.2(sass@1.69.0)(webpack@5.88.2)
+      vue:
+        specifier: 3.3.4
+        version: 3.3.4
+      vuepress-plugin-revealjs:
+        specifier: workspace:*
+        version: link:../../packages/revealjs
+      vuepress-vite:
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67(@types/node@20.8.3)(@vuepress/client@2.0.0-beta.67)(sass-loader@13.3.2)(ts-node@10.9.1)(vue@3.3.4)
+      vuepress-webpack:
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67(esbuild@0.19.4)(sass@1.69.0)(typescript@5.2.2)(vue@3.3.4)(webpack@5.88.2)
+
   demo/sass-palette:
     devDependencies:
       '@vuepress/cli':
@@ -1077,6 +1104,33 @@ importers:
       vue:
         specifier: 3.3.4
         version: 3.3.4
+      vuepress-vite:
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67(@types/node@20.8.3)(@vuepress/client@2.0.0-beta.67)(sass-loader@13.3.2)(ts-node@10.9.1)(vue@3.3.4)
+      vuepress-webpack:
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67(esbuild@0.19.4)(sass@1.69.0)(typescript@5.2.2)(vue@3.3.4)(webpack@5.88.2)
+
+  docs/revealjs:
+    dependencies:
+      '@vuepress/client':
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67
+      docs-shared:
+        specifier: workspace:*
+        version: link:../../docs-shared
+      sass-loader:
+        specifier: 13.3.2
+        version: 13.3.2(sass@1.69.0)(webpack@5.88.2)
+      vue:
+        specifier: 3.3.4
+        version: 3.3.4
+      vuepress-plugin-revealjs:
+        specifier: workspace:*
+        version: link:../../packages/revealjs
+      vuepress-shared:
+        specifier: workspace:*
+        version: link:../../packages/shared
       vuepress-vite:
         specifier: 2.0.0-beta.67
         version: 2.0.0-beta.67(@types/node@20.8.3)(@vuepress/client@2.0.0-beta.67)(sass-loader@13.3.2)(ts-node@10.9.1)(vue@3.3.4)
@@ -1762,9 +1816,6 @@ importers:
       mermaid:
         specifier: 10.5.0
         version: 10.5.0
-      reveal.js:
-        specifier: ^4.6.1
-        version: 4.6.1
       sass-loader:
         specifier: ^13.3.2
         version: 13.3.2(sass@1.69.0)(webpack@5.88.2)
@@ -2004,6 +2055,58 @@ importers:
       '@vuepress/core':
         specifier: 2.0.0-beta.67
         version: 2.0.0-beta.67
+
+  packages/revealjs:
+    dependencies:
+      '@mdit/plugin-uml':
+        specifier: ^0.4.8
+        version: 0.4.8
+      '@types/markdown-it':
+        specifier: ^13.0.2
+        version: 13.0.2
+      '@vuepress/client':
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67
+      '@vuepress/core':
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67
+      '@vuepress/utils':
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67
+      '@vueuse/core':
+        specifier: ^10.4.1
+        version: 10.5.0(vue@3.3.4)
+      reveal.js:
+        specifier: ^4.6.1
+        version: 4.6.1
+      sass-loader:
+        specifier: ^13.3.2
+        version: 13.3.2(sass@1.69.0)(webpack@5.88.2)
+      vue:
+        specifier: ^3.3.4
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.2.5
+        version: 4.2.5(vue@3.3.4)
+      vuepress:
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67(@types/node@20.8.3)(@vuepress/client@2.0.0-beta.67)(sass-loader@13.3.2)(ts-node@10.9.1)(vue@3.3.4)
+      vuepress-plugin-sass-palette:
+        specifier: workspace:*
+        version: link:../sass-palette
+      vuepress-shared:
+        specifier: workspace:*
+        version: link:../shared
+      vuepress-vite:
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67(@types/node@20.8.3)(@vuepress/client@2.0.0-beta.67)(sass-loader@13.3.2)(ts-node@10.9.1)(vue@3.3.4)
+      vuepress-webpack:
+        specifier: 2.0.0-beta.67
+        version: 2.0.0-beta.67(esbuild@0.19.4)(sass@1.69.0)(typescript@5.2.2)(vue@3.3.4)(webpack@5.88.2)
+    devDependencies:
+      markdown-it:
+        specifier: ^13.0.2
+        version: 13.0.2
 
   packages/rtl:
     dependencies:

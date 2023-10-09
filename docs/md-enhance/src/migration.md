@@ -214,3 +214,7 @@ You can pass the second argument `true` to enable legacy mode when calling `mdEn
 - `imageFix` removed
 
   Mr.Hope already made a PR to fix broken image links in Markdown, so it's no longer needed
+
+- `presentation` removed
+
+  Reveal.js runtime is large, to slim current package, we extract it to a standalone package [vuepress-plugin-revealjs](https://plugin-revealjs.vuejs.press).

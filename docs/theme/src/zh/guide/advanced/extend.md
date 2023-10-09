@@ -27,7 +27,6 @@ tag:
 
 - Layout
 - NotFound
-- Slide (仅在幻灯片启用时可用)
 - BlogCategory (仅在博客启用时可用)
 - BlogHome (仅在博客启用时可用)
 - BlogType (仅在博客启用时可用)
