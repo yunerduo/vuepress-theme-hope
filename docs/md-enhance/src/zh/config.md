@@ -208,7 +208,7 @@ order: 2
 - 类型: `boolean`
 - 默认值: `false`
 - 详情:
-  - [Figure](./guide/grammar/image.md#figure)
+  - [Figure](./guide/grammar/image.md#图片-figure)
 
 是否启用图片 Figure 支持。
 
@@ -217,7 +217,7 @@ order: 2
 - 类型: `boolean`
 - 默认值: `false`
 - 详情:
-  - [图片懒加载](./guide/grammar/image.md#image-lazyload)
+  - [图片懒加载](./guide/grammar/image.md#图片懒加载)
 
 是否使用原生方式懒加载页面图片。
 
@@ -237,7 +237,7 @@ order: 2
 - 默认值: `false`
 - 在 GFM 中启用: 是
 - 详情:
-  - [图片标记](./guide/grammar/image.md#image-mark)
+  - [图片标记](./guide/grammar/image.md#图片-id-标记)
 
 是否启用图片标注支持
 
@@ -246,7 +246,7 @@ order: 2
 - 类型: `boolean`
 - 默认值: `false`
 - 详情:
-  - [图片尺寸](./guide/grammar/image.md#image-size)
+  - [图片尺寸](./guide/grammar/image.md#图片尺寸)
 
 是否启用图片尺寸支持。
 
@@ -255,7 +255,7 @@ order: 2
 - 类型: `boolean`
 - 默认值: `false`
 - 详情:
-  - [图片尺寸](./guide/grammar/image.md#image-size)
+  - [图片尺寸](./guide/grammar/image.md#图片尺寸)
 
 是否启用 obsidian 图片尺寸支持。
 
