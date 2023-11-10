@@ -15,6 +15,7 @@ This plugin provides the following ways to enrich your content.
 - Footnotes: Supplementary explanation of key content
 - Import files: Easily split or reuse files
 - Slideshow: Show content
+
 <!-- #endregion intro -->
 
 <!-- more -->

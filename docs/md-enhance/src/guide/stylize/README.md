@@ -7,9 +7,25 @@ dir:
 index: false
 ---
 
-This plugin provides the following features to stylize your content.
+<!-- #region intro -->
 
-## Align
+This plugin provides the following features to stylize your content:
+
+- Align: Customize content alignment
+- Container: Wrap contents in different types of hint box
+- Attrs: Adding attrs to markdown contents
+- Mark: Highlight contents
+- Stylize: Customizable token stylizer
+
+<!-- #endregion intro -->
+
+<!-- more -->
+
+## Demo
+
+<!-- #region demo -->
+
+### Align
 
 ::: center
 
@@ -23,26 +39,38 @@ I am right align
 
 :::
 
-- [View Detail](align.md)
+- [View Detail](./align.md)
 
-## Attrs
+### Container
+
+::: tip
+
+This is a tip
+
+:::
+
+- [View Detail](./container.md)
+
+### Attrs
 
 A **word**{#word} having id.
 
-- [View Detail](attrs.md)
+- [View Detail](./attrs.md)
 
-## Mark
+### Mark
 
 You can mark ==important words==.
 
-- [View Detail](mark.md)
+- [View Detail](./mark.md)
 
-## Stylize
+### Stylize
 
 <!-- markdownlint-disable MD033 -->
 
 Donate Mr.Hope a cup of coffee. _Recommended_
 
-- [View Detail](stylize.md)
+- [View Detail](./stylize.md)
 
 <!-- markdownlint-enable MD033 -->
+
+<!-- #endregion demo -->

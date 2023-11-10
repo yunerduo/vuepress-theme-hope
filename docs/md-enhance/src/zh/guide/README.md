@@ -19,11 +19,23 @@ VuePress 本身也新增了一些 Markdown 语法，如果你对它们不熟悉�
 
 :::
 
+## 语法
+
+<!-- @include: ./grammar/README.md#intro -->
+
+<!-- @include: ./grammar/README.md#demo -->
+
 ## 内容
 
 <!-- @include: ./content/README.md#intro -->
 
 <!-- @include: ./content/README.md#demo -->
+
+## 样式化
+
+<!-- @include: ./stylize/README.md#intro -->
+
+<!-- @include: ./stylize/README.md#demo -->
 
 ## 图表
 

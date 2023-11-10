@@ -19,11 +19,23 @@ Don't worry about the size of your site. The final output will only include code
 
 :::
 
+## Grammar
+
+<!-- @include: ./grammar/README.md#intro -->
+
+<!-- @include: ./grammar/README.md#demo -->
+
 ## Content
 
 <!-- @include: ./content/README.md#intro -->
 
 <!-- @include: ./content/README.md#demo -->
+
+## Stylize
+
+<!-- @include: ./stylize/README.md#intro -->
+
+<!-- @include: ./stylize/README.md#demo -->
 
 ## Charts
 
