@@ -1,6 +1,7 @@
+import { VPLink } from "@vuepress/client";
 import type { FunctionalComponent, VNode } from "vue";
 import { computed, defineComponent, h, ref } from "vue";
-import { VPLink, entries, keys } from "vuepress-shared/client";
+import { entries, keys } from "vuepress-shared/client";
 
 import DropTransition from "@theme-hope/components/transitions/DropTransition";
 import { useNavigate, useThemeLocaleData } from "@theme-hope/composables/index";

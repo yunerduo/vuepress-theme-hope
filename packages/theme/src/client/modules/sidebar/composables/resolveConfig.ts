@@ -7,7 +7,6 @@ import {
   isPlainObject,
   isString,
 } from "@vuepress/shared";
-import { useRouter } from "vue-router";
 import { keys, startsWith } from "vuepress-shared/client";
 
 import { sidebarData } from "@temp/theme-hope/sidebar";
@@ -70,7 +69,6 @@ export const resolveArraySidebarItems = (
   headerDepth: number,
   prefix = "",
 ): ResolvedSidebarItem[] => {
-  const router = useRouter();
   const page = usePageData();
 
   const handleChildItem = (
@@ -78,16 +76,14 @@ export const resolveArraySidebarItems = (
     pathPrefix = prefix,
   ): ResolvedSidebarPageItem | ResolvedSidebarGroupItem => {
     const childItem = isString(item)
-      ? resolveLinkInfo(router, resolvePrefix(pathPrefix, item))
+      ? resolveLinkInfo(resolvePrefix(pathPrefix, item))
       : item.link
         ? {
             ...item,
             ...(!isLinkExternal(item.link)
               ? {
-                  link: resolveLinkInfo(
-                    router,
-                    resolvePrefix(pathPrefix, item.link),
-                  ).link,
+                  link: resolveLinkInfo(resolvePrefix(pathPrefix, item.link))
+                    .link,
                 }
               : {}),
           }

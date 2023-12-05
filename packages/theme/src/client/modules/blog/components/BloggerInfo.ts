@@ -1,7 +1,7 @@
-import { useSiteLocaleData, withBase } from "@vuepress/client";
+import { VPLink, useSiteLocaleData, withBase } from "@vuepress/client";
 import type { VNode } from "vue";
 import { computed, defineComponent, h } from "vue";
-import { VPLink, getAuthor, keys } from "vuepress-shared/client";
+import { getAuthor, keys } from "vuepress-shared/client";
 
 import { useNavigate, useThemeLocaleData } from "@theme-hope/composables/index";
 import SocialMedia from "@theme-hope/modules/blog/components/SocialMedia";

@@ -1,10 +1,10 @@
-import { useRouteLocale } from "@vuepress/client";
+import { VPLink, useRouteLocale } from "@vuepress/client";
 import { isPlainObject, isString } from "@vuepress/shared";
 import { useEventListener } from "@vueuse/core";
 import type { VNode } from "vue";
 import { computed, defineComponent, h, ref, toRef, watch } from "vue";
 import { useRouter } from "vue-router";
-import { VPLink, useLocaleConfig } from "vuepress-shared/client";
+import { useLocaleConfig } from "vuepress-shared/client";
 
 import { SearchLoading } from "./SearchLoading.js";
 import { HeadingIcon, HeartIcon, HistoryIcon, TitleIcon } from "./icons.js";
@@ -18,7 +18,7 @@ import {
   searchProLocales,
 } from "../define.js";
 import type { MatchedItem, Word } from "../typings/index.js";
-import { CLOSE_ICON } from "../utils/index.js";
+import { CLOSE_ICON, getPath } from "../utils/index.js";
 
 import "../styles/search-result.scss";
 
@@ -80,12 +80,6 @@ export default defineComponent({
     const activatedResult = computed(
       () => results.value[activatedResultIndex.value] || null,
     );
-
-    const getRealPath = (item: MatchedItem): string =>
-      router.resolve({
-        name: item.key,
-        ...("anchor" in item ? { hash: `#${item.anchor}` } : {}),
-      }).fullPath;
 
     const activePreviousHistory = (): void => {
       const { isQuery, index } = activatedHistoryStatus.value;
@@ -197,11 +191,9 @@ export default defineComponent({
           const item =
             activatedResult.value.contents[activatedResultContentIndex.value];
 
-          const path = getRealPath(item);
-
           addQueryHistory(props.query);
           addResultHistory(item);
-          void router.push(path);
+          void router.push(getPath(item));
           resetSearchResult();
         }
       } else if (enableResultHistory) {
