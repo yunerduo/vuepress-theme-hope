@@ -249,7 +249,7 @@ export default defineComponent({
                           h(
                             "div",
                             { class: "search-pro-result-title" },
-                            locale.value.history,
+                            locale.value.queryHistory,
                           ),
                           queryHistory.value.map((item, historyIndex) =>
                             h(
@@ -300,7 +300,7 @@ export default defineComponent({
                           h(
                             "div",
                             { class: "search-pro-result-title" },
-                            locale.value.history,
+                            locale.value.resultHistory,
                           ),
 
                           resultHistory.value.map((item, historyIndex) =>

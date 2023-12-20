@@ -4,6 +4,42 @@ All notable changes to this project will be documented in this file. See [Conven
 
 <!-- #region recent-change -->
 
+## [2.0.0-rc.5](https://github.com/vuepress-theme-hope/vuepress-theme-hope/compare/v2.0.0-rc.4...v2.0.0-rc.5) (2023-12-16)
+
+### Features
+
+- **shared:** add addViteOptimizeDepsNeedsInterop ([552bf31](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/552bf310083ae747c28dc0b73718a4be676b533c))
+- update template ([508efa3](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/508efa33fe10fc46b210721bb4ba56e3af11f5d6))
+- update template ([93e2c36](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/93e2c36329b383ff2ef4cf79b74dd18b8ca9d3bb))
+
+### Bug Fixes
+
+- **comment2:** improve Artalk ([9742d40](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/9742d402dee79aa169387fd3a9fc426ada78c98f))
+- improve a11y ([5ca4cb8](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/5ca4cb8ea8273ee533889f6f40f0c2759796d138))
+- **md-enhance:** fix markmap ([87797cf](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/87797cf2531a8f500c883dc9553b0ed099c838be))
+
+## [2.0.0-rc.4](https://github.com/vuepress-theme-hope/vuepress-theme-hope/compare/v2.0.0-rc.3...v2.0.0-rc.4) (2023-12-11)
+
+### Bug Fixes
+
+- **create:** fix package.json ([c606fe7](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/c606fe757c6866d9e77d30029ebe1dc09ecaea42))
+
+## [2.0.0-rc.3](https://github.com/vuepress-theme-hope/vuepress-theme-hope/compare/v2.0.0-rc.2...v2.0.0-rc.3) (2023-12-09)
+
+### Features
+
+- **components:** add more share services & redraw icons ([#3709](https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/3709)) ([1da2887](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/1da2887a2aeba1dc6098929de64a291e295824f3))
+- **components:** update share default config ([9b4132e](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/9b4132e65f1ae33db48aa513b188e5ff0d8a75e7))
+- **search-pro:** update locales, close [#3712](https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/3712) ([839bd87](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/839bd870dbb5f4f79979387f4ee33a63e316f870))
+
+### Bug Fixes
+
+- **auto-catalog:** fix autoCatalog component ([2928a13](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/2928a1309b62973c2e3ebf16a5c329b5199e3fba))
+- **auto-catalog:** fix index issue ([20be00b](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/20be00bacf431357e567b97ac0cdc4172d3ee609))
+- **md-enhance:** fix kotlin-playground, close [#3706](https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/3706) ([8096b9d](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/8096b9dca839cb7feda590c1ae07258b506b2cf7))
+- **redirect:** fix style ([ef8587c](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/ef8587c09631b25b5792214f1c881ab9ef831928))
+- **search-pro:** fix options not working as expected, close [#3712](https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/3712) ([a9e97f4](https://github.com/vuepress-theme-hope/vuepress-theme-hope/commit/a9e97f42c6ff5d5592802fd5b1f3ded6336d2f9d))
+
 ## [2.0.0-rc.2](https://github.com/vuepress-theme-hope/vuepress-theme-hope/compare/v2.0.0-rc.1...v2.0.0-rc.2) (2023-12-04)
 
 ### Features
