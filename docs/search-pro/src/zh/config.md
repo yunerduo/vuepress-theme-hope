@@ -34,7 +34,16 @@ icon: gears
     /**
      * 自定义项目的获取器
      */
-    getter: (page: Page) => string | string[] | null;
+    getter: <
+      ExtraPageData extends Record<string, unknown> = Record<never, never>,
+      ExtraPageFrontmatter extends Record<string, unknown> = Record<
+        string,
+        unknown
+      >,
+      ExtraPageFields extends Record<string, unknown> = Record<never, never>,
+    >(
+      page: Page<ExtraPageData, ExtraPageFrontmatter, ExtraPageFields>,
+    ) => string[] | string | null | undefined;
 
     /**
      * 展示的内容
@@ -168,6 +177,13 @@ export default defineUserConfig({
 有大量内容时，进行客户端搜素可能会很慢，在这种情况下你可能需要增加此值来确保开始搜索时用户已完成输入。
 
 :::
+
+### filter
+
+- 类型: `(page: Page) => boolean`
+- 默认值: `() => true`
+
+用于过滤页面的函数。
 
 ### sortStrategy
 

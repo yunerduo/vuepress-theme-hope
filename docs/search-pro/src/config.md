@@ -34,7 +34,16 @@ Whether to show suggestions while searching.
     /**
      * Custom field getter
      */
-    getter: (page: Page) => string | string[] | null;
+    getter: <
+      ExtraPageData extends Record<string, unknown> = Record<never, never>,
+      ExtraPageFrontmatter extends Record<string, unknown> = Record<
+        string,
+        unknown
+      >,
+      ExtraPageFields extends Record<string, unknown> = Record<never, never>,
+    >(
+      page: Page<ExtraPageData, ExtraPageFrontmatter, ExtraPageFields>,
+    ) => string[] | string | null | undefined;
 
     /**
      * Display content
@@ -168,6 +177,13 @@ Delay to start searching after input.
 Performing client search with huge contents could be slow, so under this case you might need to increase this value to ensure user finish input before searching.
 
 :::
+
+### filter
+
+- Type: `(page: Page) => boolean`
+- Default: `() => true`
+
+Function used to filter pages.
 
 ### sortStrategy
 

@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-hope-root",
-  "version": "2.0.0-rc.5",
+  "version": "2.0.0-rc.7",
   "private": true,
   "description": "A VuePress theme with tons of features",
   "type": "module",
@@ -51,7 +51,7 @@
     "@types/node": "20.10.5",
     "@typescript-eslint/eslint-plugin": "6.15.0",
     "@typescript-eslint/parser": "6.15.0",
-    "@vitest/coverage-v8": "1.0.4",
+    "@vitest/coverage-v8": "1.1.0",
     "@vue/eslint-config-typescript": "12.0.0",
     "bumpp": "9.2.1",
     "commit-and-tag-version": "12.0.0",
@@ -64,7 +64,7 @@
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-prettier": "5.0.1",
+    "eslint-plugin-prettier": "5.1.2",
     "eslint-plugin-vue": "9.19.2",
     "execa": "8.0.1",
     "gulp": "4.0.2",
@@ -74,7 +74,7 @@
     "magic-string": "0.30.5",
     "markdownlint-cli2": "0.11.0",
     "nano-staged": "0.8.0",
-    "ora": "7.0.1",
+    "ora": "8.0.1",
     "picocolors": "1.0.0",
     "prettier": "3.1.1",
     "rimraf": "5.0.5",
@@ -88,9 +88,9 @@
     "stylelint-config-hope": "5.0.1",
     "through2": "4.0.2",
     "tslib": "2.6.2",
-    "tsx": "4.6.2",
+    "tsx": "4.7.0",
     "typescript": "5.3.3",
-    "vitest": "1.0.4"
+    "vitest": "1.1.0"
   },
   "packageManager": "pnpm@8.12.1",
   "engines": {
