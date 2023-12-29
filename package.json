@@ -22,7 +22,7 @@
     "lint": "pnpm lint:prettier --write && pnpm lint:eslint --fix && pnpm lint:stylelint --fix",
     "lint:check": "pnpm lint:prettier && pnpm lint:eslint && pnpm lint:stylelint",
     "lint:eslint": "eslint . --ext .js,.ts,.vue",
-    "lint:md": "markdownlint-cli2 '**/*.md' '#**/node_modules/**' '#**/__tests__/**' '#**/*.snippet.md'",
+    "lint:md": "markdownlint-cli2 '**/*.md'",
     "lint:prettier": "prettier --check .",
     "lint:stylelint": "stylelint packages/*/src/**/*.{css,scss}",
     "packages:bootstrap": "tsx scripts/bootstrap.ts",
@@ -34,6 +34,25 @@
     "release:publish": "cross-env NODE_OPTIONS=\"--experimental-json-modules\" tsx scripts/release.ts",
     "release:sync": "cross-env NODE_OPTIONS=\"--experimental-json-modules\" tsx scripts/sync.ts",
     "test": "cross-env TZ=Etc/UTC vitest --coverage"
+  },
+  "nano-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.vue": [
+      "eslint --fix"
+    ],
+    "*.{js,ts}": [
+      "eslint --fix",
+      "cross-env TZ=Etc/UTC vitest related --run"
+    ],
+    "*.md": [
+      "markdownlint-cli2 --fix"
+    ],
+    "*.scss": [
+      "stylelint --fix"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
   },
   "config": {
     "commitizen": {
@@ -49,15 +68,15 @@
     "@rollup/plugin-replace": "5.0.5",
     "@types/inquirer": "9.0.7",
     "@types/node": "20.10.5",
-    "@typescript-eslint/eslint-plugin": "6.15.0",
-    "@typescript-eslint/parser": "6.15.0",
+    "@typescript-eslint/eslint-plugin": "6.16.0",
+    "@typescript-eslint/parser": "6.16.0",
     "@vitest/coverage-v8": "1.1.0",
     "@vue/eslint-config-typescript": "12.0.0",
     "bumpp": "9.2.1",
     "commit-and-tag-version": "12.0.0",
     "commitizen": "4.3.0",
     "concurrently": "8.2.2",
-    "cpx2": "6.0.1",
+    "cpx2": "7.0.0",
     "cross-env": "7.0.3",
     "cz-git": "1.8.0",
     "esbuild": "0.19.10",
@@ -84,7 +103,7 @@
     "rollup-plugin-esbuild": "6.1.0",
     "rollup-plugin-resolve-shebang": "1.0.1",
     "sort-package-json": "2.6.0",
-    "stylelint": "16.0.2",
+    "stylelint": "16.1.0",
     "stylelint-config-hope": "5.0.1",
     "through2": "4.0.2",
     "tslib": "2.6.2",
@@ -92,9 +111,75 @@
     "typescript": "5.3.3",
     "vitest": "1.1.0"
   },
-  "packageManager": "pnpm@8.12.1",
+  "packageManager": "pnpm@8.13.1",
   "engines": {
-    "node": ">=18.16.0"
+    "node": ">=20"
+  },
+  "commit-and-tag-version": {
+    "header": "# Change Log\n\nAll notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.\n\n<!-- #region recent-change -->\n",
+    "releaseCommitMessageFormat": "chore(release): publish v{{currentTag}}",
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features"
+      },
+      {
+        "type": "feature",
+        "section": "Features"
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "perf",
+        "section": "Performance Improvements"
+      },
+      {
+        "type": "revert",
+        "section": "Reverts"
+      },
+      {
+        "type": "docs",
+        "section": "Documentation",
+        "hidden": true
+      },
+      {
+        "type": "style",
+        "section": "Styles",
+        "hidden": true
+      },
+      {
+        "type": "chore",
+        "section": "Miscellaneous Chores",
+        "hidden": true
+      },
+      {
+        "type": "refactor",
+        "section": "Code Refactoring",
+        "hidden": true
+      },
+      {
+        "type": "test",
+        "section": "Tests",
+        "hidden": true
+      },
+      {
+        "type": "build",
+        "section": "Build System",
+        "hidden": true
+      },
+      {
+        "type": "ci",
+        "section": "Continuous Integration",
+        "hidden": true
+      }
+    ],
+    "skip": {
+      "bump": true,
+      "commit": true,
+      "tag": true
+    }
   },
   "pnpm": {
     "overrides": {
